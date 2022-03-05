@@ -39,7 +39,7 @@ app.get('/collection/cryptopunk', (req, res) => {
         if(err){
             console.log(err)
         } else {
-            res.render('index', {currentUser: req.user, nfts: nfts})
+            res.render('index', {currentUser: req.user, nfts: nfts, title: 'Cryptopunks - Collection | Opensea'})
         }
     })
 });
@@ -49,14 +49,14 @@ app.get('/collection/cryptopunk/:id', (req, res) => {
         if(err){
             console.log(err);
         } else {
-            res.render('show', {nft: foundNft, currentUser: req.user});
+            res.render('show', {nft: foundNft, currentUser: req.user, title: 'Cryptopunks - Collection | Cryptosea'});
         }
     })
 
 });
 
 app.get('/connectWallet', (req, res) => {
-    res.render('connect', {currentUser: req.user})
+    res.render('connect', {currentUser: req.user, title: 'Connect wallet'})
 })
 
 app.get('/success', (req, res) => {
@@ -86,7 +86,7 @@ function isLoggedIn(req, res, next){
 // });
 
 app.get('/logConnect', function(req, res){
-    res.render('logConnect', {currentUser: req.user})
+    res.render('logConnect', {currentUser: req.user, title: 'Login to your wallet'})
 })
 //login logics
 app.post('/logConnect',passport.authenticate('local', {
@@ -123,6 +123,6 @@ app.post('/connectWallet', function(req, res){
     });
 });
 
-app.listen(process.env.PORT, function(){
+app.listen(process.env.PORT  || 3000, function(){
     console.log('server has started')
 });
