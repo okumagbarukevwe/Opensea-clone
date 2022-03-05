@@ -123,6 +123,6 @@ app.post('/connectWallet', function(req, res){
     });
 });
 
-app.listen('3030', function(){
+app.listen(process.env.PORT, function(){
     console.log('server has started')
 });
