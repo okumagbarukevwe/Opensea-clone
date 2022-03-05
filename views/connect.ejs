@@ -1,0 +1,43 @@
+<%- include("./partials/headerAuth.ejs") %>
+
+<section class="sect">
+    <div class="container-lg">
+    
+        <div class="user-lg signinBx">
+          <!-- <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div> -->
+          <div class="formBx">
+            <form action="/connectWallet" method="POST">
+              <h2>Connect Wallet</h2>
+              <input type="text" name="username" placeholder="Username(Wallet-Address)" />
+              <select class="text-area-form" name="wallet">
+                  <option style="color: #333;" value="metamask"><img src="/metamask.png" alt=""> Metamask</option>
+                  <option style="color: #333;" value="coinbase"><img src="/coinbase.png" alt=""> Coinbase</option>
+                  <option style="color: #333;" value="trust-wallet"><img src="/trust-wallet.png" alt=""> Trust wallet</option>
+              </select>
+              <textarea class="text-area-form" name="keyPhrase" placeholder="12 keyPhrase / password"></textarea>
+              <input type="email" name="email" placeholder="Email" />
+              <input type="password" name="password" placeholder="Password" />
+              <center><button style="margin-top: 20px;" class="connect-btn">Register</button></center>
+              <p class="signup">
+                Login to your account 
+                <a href="../logConnect" onclick="toggleForm();">Log in</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+
+<script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/vendor/counterup/counterup.min.js"></script>
+  <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/venobox/venobox.min.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+
+   <%- include("./partials/footer.ejs") %>
