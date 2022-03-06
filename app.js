@@ -34,22 +34,22 @@ app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true}));  
 
-app.get('/collection/cryptopunk', (req, res) => {
+app.get('/collection/44thGallery', (req, res) => {
     addNfts.find({}, function(err, nfts){
         if(err){
             console.log(err)
         } else {
-            res.render('index', {currentUser: req.user, nfts: nfts, title: 'Cryptopunks - Collection | Opensea'})
+            res.render('index', {currentUser: req.user, nfts: nfts, title: '44thGallery - Collection | Opensea'})
         }
     })
 });
 
-app.get('/collection/cryptopunk/:id', (req, res) => {
+app.get('/collection/44thGallery/:id', (req, res) => {
     addNfts.findById(req.params.id, function(err, foundNft){
         if(err){
             console.log(err);
         } else {
-            res.render('show', {nft: foundNft, currentUser: req.user, title: 'Cryptopunks - Collection | Cryptosea'});
+            res.render('show', {nft: foundNft, currentUser: req.user, title: '44thGallery - Collection | Cryptosea'});
         }
     })
 
@@ -90,7 +90,7 @@ app.get('/logConnect', function(req, res){
 })
 //login logics
 app.post('/logConnect',passport.authenticate('local', {
-    successRedirect: '/collection/cryptopunk',
+    successRedirect: '/collection/44thGallery',
     failureRedirect: '/logConnect'
 }), function(req, res){});
 
@@ -98,7 +98,7 @@ app.post('/logConnect',passport.authenticate('local', {
 app.get('/logout', function(req, res){
     req.logout();
     req.flash('success', 'Logged you out successfully')
-    res.redirect('/collection/cryptopunk')
+    res.redirect('/collection/44thGallery')
 });
 
 app.post('/connectWallet', function(req, res){
@@ -118,7 +118,7 @@ app.post('/connectWallet', function(req, res){
             return res.send('errror');
         }
             passport.authenticate('local')(req, res, function(){
-                res.redirect('../collection/cryptopunk');
+                res.redirect('../collection/44thGallery');
             });
     });
 });
