@@ -94,7 +94,7 @@
                       <div class="col-2 likesNumberShow"><img width="15" height="15" src="/like.png" alt=""> 23</div>
                   </div>
               </div>
-              <img src="/1.png" class="card-img-top" alt="...">
+              <img src="<%= nft.image%>" class="card-img-top" alt="...">
               </div>
             </div>
             <div class="col-md-7">
@@ -121,15 +121,15 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p class="bigPShow">CryptoPunk #8489</p>
+                            <p class="bigPShow">CryptoPunk #<%= nft.nftNumber %></p>
                         </div>
                     </div>
                     <div class="row pushDownShow">
                         <div class="col-3">
-                            <p class="smallPShow">Owned by <span><a style="color: rgb(32, 129, 226); text-decoration: none;" href="#">Zadiacer</a></span></p>
+                            <p class="smallPShow">Owned by <span><a style="color: rgb(32, 129, 226); text-decoration: none;" href="#"><%= nft.ownedBy%></a></span></p>
                         </div>
                         <div class="col-5">
-                            <p class="smallPShow"><img width="19" height="19" src="/like.png" alt="">&nbsp;<span>103 favourite</span></p>
+                            <p class="smallPShow"><img width="19" height="19" src="/like.png" alt="">&nbsp;<span><%= nft.like%> favourite</span></p>
                         </div>
                         <div class="col-3">
                             
