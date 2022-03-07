@@ -77,7 +77,7 @@ function isLoggedIn(req, res, next){
     if(req.isAuthenticated()){
         return next()
     }
-    res.redirect('/connectWallet')
+    res.redirect('/logConnect')
 };
 
 // app.post('/connectWallet', function(req, res){
