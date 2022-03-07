@@ -40,7 +40,7 @@ body {
 
 .username2 {
     padding-top: 11px;
-    font-size: 14px;
+    font-size: 13px;
     /* overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; */
@@ -96,7 +96,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-left: 53px;
+    padding-left: 30px;
 }
 
 
