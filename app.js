@@ -49,7 +49,7 @@ app.get('/collection/44thGallery/:id', (req, res) => {
         if(err){
             console.log(err);
         } else {
-            res.render('show', {nft: foundNft, currentUser: req.user, title: '44thGallery - Collection | Cryptosea'});
+            res.render('show', {nft: foundNft, currentUser: req.user, title: ' - 44thGallery | Cryptosea'});
         }
     })
 
