@@ -67,16 +67,16 @@
               </li>
               <% if(!currentUser) { %>
                 <center><li class="nav-item">
-                  <a class="nav-link" href="../logConnect">
+                  <a class="nav-link" href="../../logConnect">
                     <button class="connect-btn">Connect Wallet</button>
                   </a>
                 </li></center>
              <% } else { %>
               <center><li class="nav-item">
-                <a class="nav-link" href="../logout"><%= currentUser.username.substring(0, 10) %>...</a>
+                <a class="nav-link" href="#"><%= currentUser.username.substring(0, 10) %>...</a>
               </li></center>
               <li class="nav-item">
-                  <a class="nav-link" href="../logout">
+                  <a class="nav-link" href="../../logout">
                     <button class="connect-btn">Log Out</button>
                   </a>
                 </li>

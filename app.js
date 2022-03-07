@@ -55,6 +55,16 @@ app.get('/collection/44thGallery/:id', (req, res) => {
 
 });
 
+app.get('/collection/44thGallery/:id/buy', isLoggedIn, (req, res) => {
+    addNfts.findById(req.params.id, function(err, foundNft){
+        if(err){
+            console.log(err);
+        } else {
+            res.render('buy', {nft: foundNft, currentUser: req.user, title: ' - 44thGallery | Cryptosea'});
+        }
+    })
+})
+
 app.get('/connectWallet', (req, res) => {
     res.render('connect', {currentUser: req.user, title: 'Connect wallet'})
 })

@@ -204,6 +204,23 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.goBackBuy{
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 6px 12px;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+}
+
 .connect-btn2{
     text-decoration: none;
     display: inline-flex;
@@ -427,4 +444,10 @@ body {
 
 .whitePlast{
     color: rgb(251, 253, 255);
+}
+
+.img-buy {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
 }
