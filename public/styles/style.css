@@ -39,11 +39,11 @@ body {
 }
 
 .username2 {
-    padding-top: 15px;
-    font-size: 16px;
-    overflow: hidden;
+    padding-top: 11px;
+    font-size: 14px;
+    /* overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
     color: rgb(32, 129, 226);
     text-decoration: none;
 }
@@ -56,13 +56,13 @@ body {
 }
 
 .tab2 {
-    padding-bottom: 10px;
-    padding-top: 5px;
+    /* padding-bottom: 10px;
+    padding-top: 5px; */
     border: 1px solid rgb(229, 232, 235);
     text-align: center;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 .button-right{
@@ -96,6 +96,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding-left: 53px;
 }
 
 
@@ -138,6 +139,10 @@ body {
 
 .collections {
     margin-top: 40px;
+}
+
+.collections2 {
+    margin-top: 9px;
 }
 
 .fitting{
@@ -227,10 +232,11 @@ body {
     font-weight: 500;
     font-size: 12px;
     color: rgb(112, 122, 131);
+    padding-left: 32px;
 } 
 .bigPShow {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     max-width: 100%;
     margin: 0px;
     width: 588px;
@@ -241,6 +247,7 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     color: rgb(53, 56, 64);
+    padding-bottom: 24px;
 }
 
 .smallPShow {
@@ -248,10 +255,125 @@ body {
 }
 
 .pushDownShow{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     color: rgb(112, 122, 131);
 }
 
 .pushDownShow2{
-    margin-top: 60px;
+    /* margin-top: 60px; */
+}
+
+.pushDown20 {
+    margin-top: 21px;
+}
+
+.gretyt {
+    border-radius: 10px;
+    border-right: 1px solid rgb(229, 232, 235);
+    border-bottom: 1px solid rgb(229, 232, 235);
+    border-left: 1px solid rgb(229, 232, 235);
+    border-image: initial;
+    border-top: none;
+    color: rgb(4, 17, 29);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.button-da {
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    border-top: 1px solid rgb(229, 232, 235);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.border-rounding {
+    background-color: rgba(21, 178, 229, 0.06);
+    border-radius: 6px;
+    border: 1px solid rgb(21, 178, 229);
+    padding: 10px;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+}
+
+.p-show-tag{
+    color: rgb(53, 56, 64);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.span-show-tag{
+    color: rgb(112, 122, 131);
+    font-size: 13px;
+    line-height: 16px;
+    min-height: 16px;
+}
+
+.img-show-prop {
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.full-props {
+    height: 50px;
+}
+
+.empty-stuff {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footerColor {
+    color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: rgb(24, 104, 183);
+    padding-top: 50px;
+}
+
+.stayInLoop {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.footerPtag {
+    font-size: 16px;
+    color: rgb(251, 253, 255);
+}
+
+.reduceWidthFooter{
+    width: 80%;
+}
+
+#inputFooter {
+    min-width: 50px;
+    width: 100%;
+    cursor: text;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    width: 100%;
+    padding: 12px;
 }
